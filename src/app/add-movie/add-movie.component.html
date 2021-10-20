@@ -1,0 +1,26 @@
+<h1 [hidden] = "genre === ''">The genre of this movie is {{ genre}}</h1>
+<h1 [hidden] = "genre !== ''">Please add movie</h1>
+<hr>
+<label>Genre:</label>
+<input type="text" (input)="OnUsernameInputChanged($event)">
+
+
+<Br>
+    <ul *ngFor="let item of itemmovie">
+     <li>
+        {{item.id}}
+        <br>
+        {{item.genre}}
+        {{item.name}}
+        {{item.detail}}
+        {{item.link}}
+        {{item.rate}}
+        </li>
+       
+      </ul>
+      
+      
+
+
+  
+    
